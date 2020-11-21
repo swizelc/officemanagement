@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Office-Management</title>
+    <h1>Office Manager</h1>
+    <script src='../src/office.js'></script>
+    <script src='../src/meetingroom.js'></script>
+    <script src='../src/meeting.js'></script>
+    
+</head>
+<body>
+    <div class="office">
+        <button id='list-rooms'>See all rooms</button>
+        <p id='rooms'></p>
+        <button id='available-rooms'>See available rooms</button>
+        <p id='list-available-rooms'></p>
+        <label for="">New room name:</label>
+        <input type="text" id="new-room-name" required>
+        <button id='add-room'>Add room</button>
+        <p id="confirm"></p>
+    </div>
+    <div class="room">
+        <label for="">Room name:</label>
+        <form>
+            <input type="text" id="room-name" required>
+            <input type="submit" value="Submit" id="submit-button">
+            <button id='enter' disabled >Enter</button>
+            <button id='leave'disabled >Leave</button>
+  
+            <p id='meeting'></p> 
+            <input type="hidden" id="meeting-name" required>
+            <p id='team'></p> </p>
+            <input type="hidden" id="team-name" required>
+
+          </form>
+    </div>
+</body>
+
+
+
+<script src='../src/index.js'></script>
+</html>
